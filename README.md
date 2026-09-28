@@ -3,13 +3,14 @@
 Companion demonstration code and synthetic sample data for the M-RSEI and
 GeoShapley location attribution workflow, released alongside the manuscript
 
-> Local ecological constraints on recovery in China's main ion-adsorption
-> rare-earth mining landscape (under review)
+> Satellite assessment of ecological condition and associated recovery
+> constraints in China's main ion adsorption rare earth mining landscape
+> from 2000 to 2025 (under review)
 
-The workflow reads a heat and pollution sensitive remote sensing ecological
-index (M-RSEI), fits gradient boosting models, and reads the model with
-GeoShapley so that geographic location enters the attribution as a coalition
-player alongside the environmental predictors.
+The workflow reads a mining-adapted remote sensing ecological index (M-RSEI),
+fits gradient boosting models, and reads the model with GeoShapley so that
+geographic location enters the attribution as a coalition player alongside
+the environmental predictors.
 
 ## What this repository contains
 
@@ -17,7 +18,7 @@ This repository provides a small, self-contained reference implementation so
 that other groups can reproduce the index construction, the gradient boosting
 attribution, the location-as-player idea, and the basic mapping workflow on
 their own data. It does not contain the full source datasets, the GEE-side
-preprocessing pipeline, or the manuscript text or figures.
+preprocessing pipeline, or the manuscript text.
 
 ```
 demo_data/
@@ -33,8 +34,9 @@ demo_code/
 
 figures/
   Fig01 ... Fig13 PNG
-  Rendered PNG copies of the manuscript figures, provided for quick visual
-  reference. See the manuscript captions for full panel descriptions.
+  Rendered PNG copies of the figures in the revised manuscript, provided for
+  quick visual reference. See the manuscript captions for full panel
+  descriptions.
 ```
 
 ## Quick start
@@ -73,8 +75,9 @@ The manuscript itself draws on publicly available remote-sensing products:
 - TerraClimate monthly climate and water balance (Abatzoglou et al. 2018)
 - SoilGrids 2.0 soil properties (Poggio et al. 2021)
 - SRTM 30 m elevation
-- Registered mining-right inventory (Ganzhou Natural Resource Bureau, available
-  under the original access conditions of the data provider)
+- MODIS MCD12Q1 land cover and NPP-VIIRS-like nighttime lights
+- Registry of rare earth mineral sites (Ganzhou Natural Resources Bureau,
+  available under the original access conditions of the data provider)
 
 This repository does not redistribute these sources; consult each provider for
 licence terms and access.
